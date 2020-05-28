@@ -3,8 +3,8 @@ class usuario {
     var correoValido = "andrea";
     var contraValida = "1238";
 
-    var correoIngresado = document.getElementById("correo").value;
-    var contraIngresado = document.getElementById("contra").value;
+    var correoIngresado = document.getElementById("correoTxt").value;
+    var contraIngresado = document.getElementById("contraTxt").value;
 
     this.validar(correoIngresado, contraIngresado, correoValido, contraValida);
   }
@@ -14,7 +14,23 @@ class usuario {
       if (correo == correoV && contra == contraV) {
         alert("Bienvenido nuevamente" + correo);
       } else {
-        alert("Usuario o contraseña invalida");
+        if (correo.length != 0 && contra.length != 0) {
+          alert("Usuario o contraseña invalida");
+        }
+      }
+
+      if (correo.length == 0 || contra.length == 0) {
+        var correoTxt = document.getElementById("correoTxt");
+        var contraTxt = document.getElementById("contraTxt");
+
+        alert("Debe llenar todos los espacios");
+
+        if (correo.length == 0) {
+          correoTxt.style.backgroundColor = "#F7A1A1";
+        }
+        if (contra.length == 0) {
+          contraTxt.style.backgroundColor = "#F7A1A1";
+        }
       }
     }
     validacion();
