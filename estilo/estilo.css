@@ -1,0 +1,12 @@
+#jumbotron {
+  width: 650px;
+  height: 450px;
+  margin-top: 150px;
+  border-radius: 25px;
+  background-color: #4794ce;
+  color: white;
+}
+
+body {
+  background-color: #e8f2f9;
+}

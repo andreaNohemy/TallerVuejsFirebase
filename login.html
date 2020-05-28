@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!--para que el contenido se ajuste a dispositivo donde se esté viendo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--estilo de la pagina-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./estilo/estilo.css" />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="jumbotron mx-auto" id="jumbotron">
+      <h1 class="display-4 text-center">Ingrese sus Datos</h1>
+
+      <hr class="my-4" />
+      <div class="row offset-1 col-md-10 offset-1 mt-5">
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Correo:</span>
+          </div>
+          <input
+            type="text"
+            id="correo"
+            class="form-control"
+            max="23"
+            required
+          />
+        </div>
+
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Contraseña:</span>
+          </div>
+          <input type="text" id="contra" class="form-control" required />
+        </div>
+      </div>
+      <a
+        class="btn btn-outline-light btn-lg offset-5 col-md-2 offset-5 mt-5"
+        onclick="u1.obtenerDatos()"
+        role="button"
+        >Login</a
+      >
+    </div>
+  </body>
+  <script src="./clases/clases.js"></script>
+</html>
