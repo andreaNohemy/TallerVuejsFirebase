@@ -1,6 +1,4 @@
 #jumbotron {
-  width: 650px;
-  height: 450px;
   margin-top: 150px;
   border-radius: 25px;
   background-color: #4794ce;
@@ -8,5 +6,9 @@
 }
 
 body {
-  background-color: #e8f2f9;
+  background-color: #c8ddec;
+}
+
+#boton:hover {
+  color: black;
 }

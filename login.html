@@ -16,37 +16,40 @@
     <title>Login</title>
   </head>
   <body>
-    <div class="jumbotron mx-auto" id="jumbotron">
-      <h1 class="display-4 text-center">Ingrese sus Datos</h1>
+    <div class="d-flex justify-content-center">
+      <div class="jumbotron mx-auto shadow-lg" id="jumbotron">
+        <h1 class="display-4 text-center">Ingrese sus Datos</h1>
 
-      <hr class="my-4" />
-      <div class="row offset-1 col-md-10 offset-1 mt-5">
-        <div class="input-group mb-2">
-          <div class="input-group-prepend">
-            <span class="input-group-text">Correo:</span>
+        <hr class="my-4" />
+        <div class="row offset-1 col-md-10 offset-1 mt-5">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Correo:</span>
+            </div>
+            <input
+              type="email"
+              id="correo"
+              class="form-control"
+              max="23"
+              required
+            />
           </div>
-          <input
-            type="text"
-            id="correo"
-            class="form-control"
-            max="23"
-            required
-          />
-        </div>
 
-        <div class="input-group mb-2">
-          <div class="input-group-prepend">
-            <span class="input-group-text">Contraseña:</span>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Contraseña:</span>
+            </div>
+            <input type="password" id="contra" class="form-control" required />
           </div>
-          <input type="text" id="contra" class="form-control" required />
         </div>
+        <a
+          id="boton"
+          class="btn btn-outline-light btn-lg offset-5 col-md-2 offset-5 mt-5"
+          onclick="u1.obtenerDatos()"
+          role="button"
+          >Login
+        </a>
       </div>
-      <a
-        class="btn btn-outline-light btn-lg offset-5 col-md-2 offset-5 mt-5"
-        onclick="u1.obtenerDatos()"
-        role="button"
-        >Login</a
-      >
     </div>
   </body>
   <script src="./clases/clases.js"></script>

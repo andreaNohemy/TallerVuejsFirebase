@@ -12,7 +12,7 @@ class usuario {
   validar = function(correo, contra, correoV, contraV) {
     function validacion() {
       if (correo == correoV && contra == contraV) {
-        alert("Bienvenido nuevamente" + correo);
+        alert("Bienvenido nuevamente " + correo);
       } else {
         alert("Usuario o contraseña invalida");
       }
